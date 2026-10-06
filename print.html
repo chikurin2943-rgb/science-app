@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>プリント一覧 - 理科学習サイト</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- 共通ヘッダー -->
+  <header class="header">
+    <div class="logo"><a href="index.html" style="text-decoration:none; color:inherit;">理科学習サイト</a></div>
+    <nav class="nav">
+      <a href="index.html">ホーム</a>
+      
+      <div class="nav-item-dropdown">
+        <a href="print.html" class="active">プリント ▾</a>
+        <ul class="dropdown-menu">
+          <li><a href="print.html?grade=all">すべての学年</a></li>
+          <li><a href="print.html?grade=1">中1 理科</a></li>
+          <li><a href="print.html?grade=2">中2 理科</a></li>
+          <li><a href="print.html?grade=3">中3 理科</a></li>
+        </ul>
+      </div>
+
+      <a href="column.html">コラム</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <div class="section-title fade-in-up">
+      <h2>学習プリント一覧</h2>
+      <p>画像をクリックするとPDFのプレビューやダウンロードができます。PDFは解説の末尾にあります。</p>
+    </div>
+
+    <!-- 学年切り替えタブボタン -->
+    <div class="filter-container fade-in-up">
+      <button class="filter-btn active" data-filter="all">すべて</button>
+      <button class="filter-btn" data-filter="1">1年</button>
+      <button class="filter-btn" data-filter="2">2年</button>
+      <button class="filter-btn" data-filter="3">3年</button>
+    </div>
+
+    <!-- プリントカード一覧 -->
+    <div class="card-grid">
+
+      <!-- プリント一覧のカード（クリックで解説記事へ飛ぶ） -->
+<article class="card fade-in-up" data-grade="2">
+  <div class="card-badge">中2 地学</div>
+  <div class="card-image">
+    <img src="assets/image/chigaku-sakidori.png" alt="地学先取りプリント">
+  </div>
+  <div class="card-content">
+    <h3>地学先取りプリント</h3>
+    <p>圧力・飽和水蒸気量・気圧配置・前線などの要点を解説！記事内で解説とPDFを公開中。</p>
+    <div class="card-actions">
+      <!-- 直接記事ページへ誘導するボタン -->
+      <a href="print-detail-chigaku.html" class="btn btn-primary">解説とPDFを見る →</a>
+    </div>
+  </div>
+</article>
+
+      <!-- 例：中1プリントを追加したい場合は data-grade="1" を指定して追加します -->
+
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

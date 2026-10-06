@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>理科学習サイト - Home</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ナビゲーションバー -->
+  <header class="header">
+    <div class="logo"><a href="index.html" style="text-decoration:none; color:inherit;">理科学習サイト</a></div>
+    <nav class="nav">
+      <a href="index.html" class="active">ホーム</a>
+      
+      <!-- ドロップダウン付きプリントリンク -->
+      <div class="nav-item-dropdown">
+        <a href="print.html">プリント ▾</a>
+        <ul class="dropdown-menu">
+          <li><a href="print.html?grade=all">すべての学年</a></li>
+          <li><a href="print.html?grade=1">中1 理科</a></li>
+          <li><a href="print.html?grade=2">中2 理科</a></li>
+          <li><a href="print.html?grade=3">中3 理科</a></li>
+        </ul>
+      </div>
+
+      <a href="column.html">コラム</a>
+    </nav>
+  </header>
+
+  <!-- メインビジュアル -->
+  <section class="hero fade-in-up">
+    <h1>理科のWebライブラリ</h1>
+    <p>自作プリントのダウンロードや役に立つコラムを掲載しています。</p>
+  </section>
+
+  <!-- メインエリア -->
+  <main class="container">
+    
+    <!-- 1. 学年別プリントセクション -->
+    <div class="section-title fade-in-up">
+      <h2>学年別プリントを探す</h2>
+      <p>自分の学年に合った自作プリントをすぐにダウンロードできます。</p>
+    </div>
+
+    <div class="article-grid" style="margin-bottom: 4rem;">
+      <!-- 中1カード -->
+      <a href="print.html?grade=1" class="article-card fade-in-up delay-1">
+        <div class="article-thumb">
+          <span class="category-tag">中1</span>
+          <img src="assets/image/1grade-textbook.png" alt="中1理科">
+        </div>
+        <div class="article-body">
+          <h3>中学1年生のプリント</h3>
+          <p>動植物の分類・身の回りの物質・光と音・大地の変化など</p>
+        </div>
+      </a>
+
+      <!-- 中2カード -->
+      <a href="print.html?grade=2" class="article-card fade-in-up delay-2">
+        <div class="article-thumb">
+          <span class="category-tag">中2</span>
+          <img src="assets/image/2grade-textbook.png" alt="中2理科">
+        </div>
+        <div class="article-body">
+          <h3>中学2年生のプリント</h3>
+          <p>化学変化・細胞・電流・天気の変化など</p>
+        </div>
+      </a>
+
+      <!-- 中3カード -->
+      <a href="print.html?grade=3" class="article-card fade-in-up delay-3">
+        <div class="article-thumb">
+          <span class="category-tag">中3</span>
+          <img src="assets/image/3grade-textbook.png" alt="中3理科">
+        </div>
+        <div class="article-body">
+          <h3>中学3年生のプリント</h3>
+          <p>イオン・生命の連続性・運動とエネルギー・宇宙など</p>
+        </div>
+      </a>
+    </div>
+
+    <!-- 2. 学習コラムセクション -->
+    <div class="section-title fade-in-up">
+      <h2>学習コラム＆解説</h2>
+      <p>理科の考え方や効果的な勉強法をまとめています。</p>
+    </div>
+
+    <div class="article-grid">
+      <a href="column.html" class="article-card fade-in-up">
+        <div class="article-thumb">
+          <span class="category-tag">読みもの</span>
+          <img src="assets/image/column.png" alt="学習コラム">
+        </div>
+        <div class="article-body">
+          <h3>解説＆学習コラム一覧</h3>
+          <p>理科の考え方や効果的な勉強法、間違えやすいポイントなどを分かりやすく解説しています。</p>
+        </div>
+      </a>
+    </div>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
